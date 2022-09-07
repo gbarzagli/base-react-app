@@ -27,8 +27,5 @@
         {
             "path": "./tsconfig.node.json"
         }
-    ],
-    "files": [
-        "cypress/e2e/cypress.d.ts"
     ]
 }
