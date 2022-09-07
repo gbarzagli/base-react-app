@@ -15,7 +15,7 @@
         "cypress:run": "cypress run",
         "cypress:open": "cypress open",
         "lint": "eslint .",
-        "lint:css": "stylelint './src/**/*.styles.ts'",
+        "lint:css": "stylelint './src/**/*.styles.ts{,x}'",
         "postinstall": "husky install && husky set .husky/pre-commit \"yarn lint-staged\""
     },
     "dependencies": {
@@ -75,9 +75,7 @@
     },
     "lint-staged": {
         "*": "prettier --write",
-        "*.{ts,tsx}": [
-            "yarn lint",
-            "yarn lint:css"
-        ]
+        "*.styles.ts{,x}": "yarn lint:css",
+        "*.ts{,x}": "yarn lint"
     }
 }
