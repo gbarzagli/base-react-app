@@ -16,7 +16,7 @@
         "cypress:open": "cypress open",
         "lint": "eslint .",
         "lint:css": "stylelint './src/**/*.styles.ts'",
-        "postinstall": "husky install && husky add .husky/pre-commit \"yarn lint-staged\""
+        "postinstall": "husky install"
     },
     "dependencies": {
         "@tanstack/react-location": "3.7.4",
@@ -74,10 +74,14 @@
         "endOfLine": "lf"
     },
     "lint-staged": {
-        "*.{ts,tsx}": [
-            "yarn lint",
-            "prettier --write",
+        "*": [
+            "prettier --write"
+        ],
+        "src/*.styles.ts": [
             "yarn lint:css"
+        ],
+        "src/*.{ts,tsx}": [
+            "yarn lint"
         ]
     }
 }
