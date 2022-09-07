@@ -1,4 +1,4 @@
-# Base React App
+# Base React App [![Node.js CI](https://github.com/gbarzagli/base-react-app/actions/workflows/node.js.yml/badge.svg)](https://github.com/gbarzagli/base-react-app/actions/workflows/node.js.yml)
 The meaning of this React project is to be a scaffolding for future projects. It was created with Vite. Check the  [Technologies](#Technologies) section to see further details on its tooling.
  
 ## Technologies
