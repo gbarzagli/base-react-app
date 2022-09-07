@@ -17,6 +17,11 @@ const config = {
         globals: true,
         environment: 'jsdom',
         setupFiles: './src/configs/SetupTests.ts',
+        coverage: {
+            provider: 'istanbul',
+            perFile: true,
+            skipFull: true,
+        },
     },
 };
 
