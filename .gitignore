@@ -25,4 +25,4 @@ cypress/screenshots
 *.njsproj
 *.sln
 *.sw?
-.husky
+.husky/*
