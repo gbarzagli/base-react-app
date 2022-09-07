@@ -24,6 +24,8 @@ describe('App', () => {
 
         expect(incrementRadio).toBeChecked();
 
+        expect(await screen.findByText(/count is: 0/i)).toBeInTheDocument();
+
         userEvent.click(countButton);
 
         expect(await screen.findByText(/count is: 1/i)).toBeInTheDocument();
@@ -36,6 +38,9 @@ describe('App', () => {
         const countButton = await screen.findByTestId('CountButton');
 
         userEvent.click(decrementRadio);
+
+        expect(await screen.findByText(/count is: 0/i)).toBeInTheDocument();
+
         userEvent.click(countButton);
 
         expect(await screen.findByText(/count is: -1/i)).toBeInTheDocument();
