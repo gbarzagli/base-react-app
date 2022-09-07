@@ -1,7 +1,7 @@
 import React from 'react';
-import { BaseProps } from '../interfaces/BaseProps';
 
-import Stores from '../stores/index';
+import { BaseProps } from '../interfaces';
+import * as Stores from '../stores';
 
 export const StoresContext = React.createContext(Stores);
 
