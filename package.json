@@ -74,9 +74,9 @@
         "endOfLine": "lf"
     },
     "lint-staged": {
+        "*": "prettier --write",
         "*.{ts,tsx}": [
             "yarn lint",
-            "prettier --write",
             "yarn lint:css"
         ]
     }
