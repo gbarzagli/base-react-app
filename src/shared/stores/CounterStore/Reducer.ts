@@ -13,6 +13,6 @@ export function reducer(state: State, action: Action): State {
         case ActionType.RESET:
             return getInitialState();
         default:
-            throw Error('Unknowm operation');
+            return state;
     }
 }

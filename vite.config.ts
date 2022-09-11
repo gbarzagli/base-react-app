@@ -20,7 +20,6 @@ const config = {
         coverage: {
             provider: 'istanbul',
             perFile: true,
-            skipFull: true,
         },
     },
 };
